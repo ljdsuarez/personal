@@ -1,0 +1,25 @@
+.navBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  padding-top: 15vh;
+}
+
+.blogs {
+  height: 100vh;
+  width: 100%;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}

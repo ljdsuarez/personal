@@ -1,0 +1,258 @@
+.blogPage {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.blogContainer {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogSize {
+  width: 70vw;
+  height: 60vh;
+}
+
+.blog {
+  background: rgba(70, 70, 70, 0.2);
+  backdrop-filter: blur(8px);
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation_in {
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.animation_out {
+  opacity: 0;
+  transition: all 1s ease;
+  transform: scale(0.95);
+}
+
+.containerCards {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.sliderContainer {
+  display: none;
+}
+
+.sliderContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.leftArrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+  left: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 10;
+  color: rgb(255, 255, 255);
+  user-select: none;
+  cursor: pointer;
+  height: 220px;
+  transition: all 0.1s ease-in-out;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  margin-bottom: 580px;
+}
+
+.leftArrow:hover {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+  left: 0px;
+  z-index: 10;
+  color: rgb(255, 255, 255);
+  user-select: none;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  height: 220px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: all 0.1s ease-in-out;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 580px;
+}
+
+.rightArrow {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+  right: 0px;
+  z-index: 10;
+  color: rgb(255, 255, 255);
+  user-select: none;
+  cursor: pointer;
+  height: 220px;
+  padding-right: 5px;
+  padding-left: 15px;
+  transition: all 0.1s ease-in-out;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  margin-bottom: 580px;
+}
+
+.rightArrow:hover {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+  right: 0px;
+  z-index: 10;
+  color: rgb(255, 255, 255);
+  user-select: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.301);
+  height: 220px;
+  padding-right: 5px;
+  padding-left: 15px;
+  transition: all 0.1s ease-in-out;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 580px;
+}
+
+@media (min-width: 768px) {
+  .sliderContainer {
+    width: 85vw;
+    margin-top: auto;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    background: linear-gradient(
+      to right,
+      transparent,
+      10%,
+      rgba(87, 87, 87, 0.342),
+      90%,
+      transparent
+    );
+  }
+
+  .leftArrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    cursor: pointer;
+    height: 220px;
+    transition: all 0.1s ease-in-out;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+    margin-bottom: 0;
+  }
+
+  .leftArrow:hover {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    left: 0px;
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    height: 220px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.1s ease-in-out;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 0;
+  }
+
+  .rightArrow {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    right: 0px;
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    cursor: pointer;
+    height: 220px;
+    padding-right: 5px;
+    padding-left: 15px;
+    transition: all 0.1s ease-in-out;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+    margin-bottom: 0;
+  }
+
+  .rightArrow:hover {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    right: 0px;
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.301);
+    height: 220px;
+    padding-right: 5px;
+    padding-left: 15px;
+    transition: all 0.1s ease-in-out;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 0;
+  }
+
+  .cardSelected {
+    background: rgba(0, 0, 0, 0.274);
+    border-radius: 20px;
+    transition: all 0.25s ease-in-out;
+    padding: 0.1px 0;
+  }
+
+  .slideCards {
+    width: 100%;
+    height: 100%;
+  }
+}

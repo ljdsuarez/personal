@@ -1,0 +1,47 @@
+
+
+.card {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    margin: 10px 40px;
+    user-select: none;
+    border-radius: 30px;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.blogTitles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.514);
+    width: 100%;
+    height: 40%;
+    color: white;
+    transition: all .1s linear;
+    padding: 20px;
+    font-weight: 500;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.blogTitlesOnHover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.514);
+    width: 100%;
+    color: white;
+    height: 100%;
+    transition: all .1s linear;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 30px;
+}

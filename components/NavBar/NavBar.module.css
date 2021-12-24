@@ -1,0 +1,9 @@
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menuIcon {
+    display: flex;
+    transition: ease 2s;
+}
