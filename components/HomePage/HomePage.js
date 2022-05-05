@@ -27,7 +27,7 @@ function HomePage() {
           <div className={styles.laurenzTitle}>
             <div className={styles.atomLa}>La</div>
             <div className={styles.atomLa57}>57</div>
-            <div>urenz'</div>
+            <div>urenz</div>
           </div>
           <div className={styles.pageTitle}>
             <div className={styles.atomP}>P</div>
